@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 function PageLink({ id, href, text, childClass }) {
 	return (
 		<li>
-			<a href={href} className={childClass}>
+			<Link to={href} className={childClass}>
 				{text}
-			</a>
+			</Link>
 		</li>
 	);
 }
